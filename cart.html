@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Ellipse 1.png" alt="Cow Avatar" class="avatar" height="70px">
+            <input type="text" placeholder="Search" class="search-bar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="items.html">Poultry feed</a></li>
+                    <li><a href="items3.html">Horses feed</a></li>
+                    <li><a href="items2.html">Livestock feed</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Shopping cart</h1>
+            <p class="cart-items-info">You have 4 items in your cart</p>
+            
+            <div class="cart-item">
+                <img src="1d99c2c4a2e5ff56afb50f13561d500a 7.png" alt="Viking Horse" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Viking Horse</h2>
+                    <p class="product-price">Price $322</p>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <button class="delete-item">🗑️</button>
+            </div>
+            
+            <div class="cart-item">
+                <img src="1d99c2c4a2e5ff56afb50f13561d500a 8.png" alt="Jawwad" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Jawwad</h2>
+                    <p class="product-price">Price $333</p>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <button class="delete-item">🗑️</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="1d99c2c4a2e5ff56afb50f13561d500a 9.png" alt="Red Mills" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Red Mills</h2>
+                    <p class="product-price">Price $250</p>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <button class="delete-item">🗑️</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="1d99c2c4a2e5ff56afb50f13561d500a 1.png" alt="Mannapro" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Mannapro</h2>
+                    <p class="product-price">Price $250</p>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <button class="delete-item">🗑️</button>
+            </div>
+            
+            <div class="checkout-section">
+                <p class="total-price">$1,155</p>
+                <button class="checkout-button" onclick="fun()">Checkout →</button>
+            </div>
+        </main>
+
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 Poultry Feed Store. All rights reserved.</p>
+        <p>Contact Us : 01151737066</p>
+    </footer>
+</body>
+<script>
+    function fun(){
+        window.location = 'pay.html'
+    }
+</script>
+</html>

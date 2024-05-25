@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="de.css">
+</head>
+<body>
+    <header>
+        <img src="Ellipse 1.png" alt="Cow Avatar" class="avatar" height="70px">
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="items.html">Poultry feed</a></li>
+                <li><a href="items3.html">Horses feed</a></li>
+                <li><a href="items2.html">Livestock feed</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <div class="product-card">
+            <img src="1d99c2c4a2e5ff56afb50f13561d500a 1.png" alt="Mannapro" class="product-image">
+            <h1 class="product-title">Mannapro</h1>
+            <div class="rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            </div>
+            <div class="quantity-control">
+                <button class="minus">-</button>
+                <span class="quantity">1</span>
+                <button class="plus">+</button>
+            </div>
+            <div class="product-details">
+                <h2>More Details</h2>
+                <p>Ducks fodder from the remains of what is taken from restaurants and hotels by converting the food into fodder and making it more meaningful... <a href="#">Read More</a></p>
+            </div>
+            <div class="weight-options">
+                <h2>Net weight</h2>
+                <button class="weight">60 kilos</button>
+                <button class="weight active">550 kilos</button>
+                <button class="weight">121 kilos</button>
+            </div>
+            <button class="buy-now" onclick="fun()">Buy Now</button>
+        </div>
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Poultry Feed Store. All rights reserved.</p>
+        <p>Contact Us : 01151737066</p>
+    </footer>
+</body>
+<script>
+    function fun(){
+        window.location = 'cart.html'
+    }
+</script>
+</html>

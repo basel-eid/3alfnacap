@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="res.css">
+</head>
+<body>
+    <header>
+        <h2>3alafna</h2>
+        <img src="Ellipse 1.png" alt="Cow Avatar" class="avatar" height="70px">
+    </header>
+    <div class="container">
+        <h2>Restaurant Data</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Restaurant Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="man">Manager Name:</label>
+                <input type="text" id="man" name="man" required>
+            </div>
+            <div class="form-group">
+                <label for="loc">Location</label>
+                <input type="text" id="ocation" name="loc" required>
+            </div>
+            <div class="form-group">
+                <label for="num">Real estate registration number</label>
+                <input type="text" id="num" name="num" required>
+            </div>
+            <div class="form-group">
+                <label for="num">Date want to meet in</label>
+                <input type="text" id="date" name="date" required>
+            </div>
+            <button type="button" id="butt" onclick="fun()">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Poultry Feed Store. All rights reserved.</p>
+        <p>Contact Us : 01151737066</p>
+    </footer>
+</body>
+<script>
+    function fun(){
+        window.location = 'home.html'
+    }
+</script>
+</html>

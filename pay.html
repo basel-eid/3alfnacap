@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body background=" #f4f4f4;">
+    <header>
+        <img src="Ellipse 1.png" alt="Cow Avatar" class="avatar" height="70px">
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="items.html">Poultry feed</a></li>
+                <li><a href="items3.html">Horses feed</a></li>
+                <li><a href="items2.html">Livestock feed</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Profile Image -->
+        
+
+        <!-- Payment Method Section -->
+        <div class="payment-method">
+            <h2>Payment Method</h2>
+            <!-- Product List -->
+            <div class="product">
+                <div class="product-info">
+                    <h3>Breeding mix</h3>
+                    <p>Price: <span class="price">\$344</span></p>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
+                <div class="product-image">
+                    <img src="1d99c2c4a2e5ff56afb50f13561d500a 6.png" alt="Breeding mix">
+                </div>
+                <div class="cart-icon">🛒</div>
+            </div>
+
+            <div class="product">
+                <div class="product-info">
+                    <h3>Mannapro</h3>
+                    <p>Price: <span class="price">\$250</span></p>
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+                <div class="product-image">
+                    <img src="1d99c2c4a2e5ff56afb50f13561d500a 1.png" alt="Mannapro">
+                </div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="buttons">
+                <button class="increase" onclick="increaseProductCount()">+</button>
+                <span id="productCount">2</span>
+                <button class="decrease" onclick="decreaseProductCount()">-</button>
+            </div>
+
+            <!-- Payment Form -->
+            <form class="payment-form">
+                <label for="name">NAME ON CARD</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="card-number">CARD NUMBER</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="card-number">Address</label>
+                <input type="text" id="add" name="add" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exp-date">EXP DATE</label>
+                        <input type="text" id="exp-date" name="exp-date" placeholder="MM / YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </div>
+                </div>
+
+                <div class="payment-icons">
+                   
+                    <img src="C:\Users\DELL\Desktop\capestone\Payment method icon (1).png" alt="Visa">
+                    <img src="C:\Users\DELL\Desktop\capestone\Payment method icon.png" alt="Mastercard">
+                    
+                </div>
+
+                <button type="submit" class="buy-button" onsubmit="fun()">Buy</button>
+            </form>
+        </div>
+
+       
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Poultry Feed Store. All rights reserved.</p>
+        <p>Contact Us : 01151737066</p>
+    </footer>
+</body>
+<script>
+    function fun(){
+        window.location.href = 'select.html'
+    }  
+    var numberOfProducts = 2;
+
+function increaseProductCount() {
+    numberOfProducts++;
+    document.getElementById("productCount").innerText = numberOfProducts;
+}
+
+function decreaseProductCount() {
+    if (numberOfProducts > 1) {
+        numberOfProducts--;
+        document.getElementById("productCount").innerText = numberOfProducts;
+    } else {
+        alert("The number of products cannot be decreased further.");
+    }
+}
+</script>
+</html>
